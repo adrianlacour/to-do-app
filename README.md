@@ -73,6 +73,6 @@ To delete a task, click on "delete" Icon.
 
 # License
 
-MIT License
+[MIT License](https://github.com/adrianlacour/to-do-app/blob/main/LICENSE)
 
 Copyright (c) 2021 Adrian LaCour
