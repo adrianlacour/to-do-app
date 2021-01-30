@@ -1,6 +1,6 @@
 # Go To Do App
 
-This is a to-do list application.
+This is a to-do list application. It was created to explore using Golang as a backend language and the React library for the front end. 
 
 ## Stack
 
@@ -11,7 +11,7 @@ This is a to-do list application.
 * Go [MongoDB driver](go.mongodb.org/mongo-driver) 
 * [MongoDB](https://www.mongodb.com/)
 
-### Front-end
+### Front end
 * [Javascript](https://www.javascript.com/)
 * Javascript UI library [React](https://reactjs.org/)
 * [Semantic-ui-react](https://react.semantic-ui.com/)
@@ -81,6 +81,11 @@ To delete a task, select **Delete** on the task card.
 ### All at once
 
 ![Complete app walkthrough](https://github.com/adrianlacour/to-do-app/blob/main/images/to-do-app-walkthrough.gif)
+
+---
+## Future enhancements
+* Containerize the application, for ease of deployment.
+* Add linting (and maybe deployment) as part of CI pipeline.
 
 ---
 
