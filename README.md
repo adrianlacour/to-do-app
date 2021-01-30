@@ -48,19 +48,19 @@ From the base application directory:
 
 ### Base page
 
-![]()
+![](https://github.com/adrianlacour/to-do-app/blob/main/images/base_website.png)
 
 ### Create tasks
 
 In the input field, enter a task and press **Enter**.
 
-![]()
+![Adding items](https://github.com/adrianlacour/to-do-app/blob/main/images/adding_items.png)
 
 ### Complete Task
 
 On completion of a task, select **Done** on the task card.
 
-![]()
+![Base website](https://github.com/adrianlacour/to-do-app/blob/main/images/complete_item.png)
 
 Upon completion of the task, the card's bottom line color changes from yellow to green.
 
@@ -68,7 +68,7 @@ Upon completion of the task, the card's bottom line color changes from yellow to
 
 To undo a copmleted task, select on **Undo** on the task card.
 
-![]()
+![Undo item completion](https://github.com/adrianlacour/to-do-app/blob/main/images/adding_items.png)
 
 Upon undoing copmletion of the task, the card's bottom line color changes from green to yellow.
 
@@ -76,7 +76,11 @@ Upon undoing copmletion of the task, the card's bottom line color changes from g
 
 To delete a task, select **Delete** on the task card.
 
-![]()
+![Deleting items](https://github.com/adrianlacour/to-do-app/blob/main/images/after_deleting_item.png)
+
+### All at once
+
+![Complete app walkthrough](https://github.com/adrianlacour/to-do-app/blob/main/images/to-do-app-walkthrough.gif)
 
 ---
 
