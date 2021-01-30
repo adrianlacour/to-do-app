@@ -149,7 +149,7 @@ class ToDoList extends Component {
     return (
       <div>
         <div className="header">
-          <Header className="header" as="h2">
+          <Header className="header" as="h1">
             To-do List
           </Header>
         </div>
