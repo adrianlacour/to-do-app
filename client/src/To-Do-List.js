@@ -26,7 +26,6 @@ class ToDoList extends Component {
 
   onSubmit = () => {
     let { task } = this.state;
-    // console.log("pRINTING task", this.state.task);
     if (task) {
       axios
         .post(
@@ -66,34 +65,36 @@ class ToDoList extends Component {
             }
 
             return (
-              <Card key={item._id} color={color} fluid>
-                <Card.Content>
-                  <Card.Header textAlign="left">
-                    <div style={style}>{item.task}</div>
-                  </Card.Header>
+              <div className="todo">
+                <Card key={item._id} color={color} fluid>
+                  <Card.Content>
+                    <Card.Header textAlign="left">
+                      <div style={style}>{item.task}</div>
+                    </Card.Header>
 
-                  <Card.Meta textAlign="right">
-                    <Icon
-                      name="check circle"
-                      color="green"
-                      onClick={() => this.updateTask(item._id)}
-                    />
-                    <span style={{ paddingRight: 10 }}>Done</span>
-                    <Icon
-                      name="undo"
-                      color="yellow"
-                      onClick={() => this.undoTask(item._id)}
-                    />
-                    <span style={{ paddingRight: 10 }}>Undo</span>
-                    <Icon
-                      name="delete"
-                      color="red"
-                      onClick={() => this.deleteTask(item._id)}
-                    />
-                    <span style={{ paddingRight: 10 }}>Delete</span>
-                  </Card.Meta>
-                </Card.Content>
-              </Card>
+                    <Card.Meta textAlign="right">
+                      <Icon
+                        name="check circle"
+                        color="green"
+                        onClick={() => this.updateTask(item._id)}
+                      />
+                      <span style={{ paddingRight: 10 }}>Done</span>
+                      <Icon
+                        name="undo"
+                        color="yellow"
+                        onClick={() => this.undoTask(item._id)}
+                      />
+                      <span style={{ paddingRight: 10 }}>Undo</span>
+                      <Icon
+                        name="delete"
+                        color="red"
+                        onClick={() => this.deleteTask(item._id)}
+                      />
+                      <span style={{ paddingRight: 10 }}>Delete</span>
+                    </Card.Meta>
+                  </Card.Content>
+                </Card>
+              </div>
             );
           }),
         });
@@ -147,22 +148,22 @@ class ToDoList extends Component {
   render() {
     return (
       <div>
-        <div className="row">
+        <div className="header">
           <Header className="header" as="h2">
-            TO DO LIST
+            To-do List
           </Header>
         </div>
-        <div className="row">
-          <Form onSubmit={this.onSubmit}>
+        <div className="input">
+          <Form onSubmit={this.onSubmit} size={"huge"} key={"huge"}>
             <Input
               type="text"
               name="task"
               onChange={this.onChange}
               value={this.state.task}
               fluid
-              placeholder="Create Task"
+              placeholder="Create Task..."
+              focus
             />
-            {/* <Button >Create Task</Button> */}
           </Form>
         </div>
         <div className="row">

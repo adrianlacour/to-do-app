@@ -3,13 +3,32 @@ body {
   margin: 0 auto;
   margin-top: 50px;
 
-  font-family: "Open Sans", sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .header {
   text-align: center;
+  padding-bottom: 2.5em;
+}
+
+.input {
+  text-align: left;
+  padding-bottom: 2em;
 }
 
 .row {
-  padding-bottom: 50px;
+  padding-bottom: 2.5em;
+}
+
+.todo {
+  align-items: left;
+  background: #D3D3D3;
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 0px 3px 5px 0px;
+  width: 100%;
 }
